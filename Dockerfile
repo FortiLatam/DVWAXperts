@@ -19,10 +19,10 @@ RUN export FGTCA=$(base64 /var/www/html/Fortinet_CA_SSL.cer -w0) && \
 RUN chown www-data:www-data -R /var/www/html && \
     rm /var/www/html/index.html
 
-//RUN service mysql start 
+#RUN service mysql start 
 
-//RUN sleep 3 && \
-//    mysql -uroot -pp4ssw0rd -e "CREATE USER dvwa@localhost IDENTIFIED BY 'p4ssw0rd';CREATE DATABASE dvwa;GRANT ALL privileges ON dvwa.* TO 'dvwa'@localhost;"
+#RUN sleep 3 && \
+#    mysql -uroot -pp4ssw0rd -e "CREATE USER dvwa@localhost IDENTIFIED BY 'p4ssw0rd';CREATE DATABASE dvwa;GRANT ALL privileges ON dvwa.* TO 'dvwa'@localhost;"
 
 EXPOSE 80
 
