@@ -3,3 +3,8 @@ version: v1
 id:
   org: 60128e83-07b2-447a-be47-7e3405a278ad
   app: 509fa655-7b0f-45a5-b737-827c2d98c06b
+
+scanners:
+  - sast
+  - secret
+  - sca
