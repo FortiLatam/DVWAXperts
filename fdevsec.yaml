@@ -6,13 +6,13 @@ id:
 
 scanners:
   - sast
+  - dast
   - secret
   - sca
   - iac
-  - container
-  - dast
-  
-  dast:
-    url: http://a45afab9226c047e4b4327797ac8353d-47492398.us-east-2.elb.amazonaws.com:8081/
-    fortipentest_scanner: false #true|false
-    full_scan: true #true|false
+  - container   
+    
+dast:
+  url: http://a45afab9226c047e4b4327797ac8353d-47492398.us-east-2.elb.amazonaws.com:8081/
+  fortipentest_scanner: true #true|false
+  full_scan: true #true|false
