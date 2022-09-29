@@ -44,13 +44,12 @@ pipeline {
          }
         }
       }
-      /*stage('SAST'){
+      stage('CNP Scan'){
             steps {
-                 sh 'docker pull registry.fortidevsec.forticloud.com/fdevsec_sast:latest'
-                 sh 'docker run --rm --mount type=bind,source="$PWD",target=/scan registry.fortidevsec.forticloud.com/fdevsec_sast:latest'
+                 fortiCWPScanner imageName: "${IMAGE_REPO_NAME}:${IMAGE_TAG}-${env.BUILD_NUMBER}", block: true
             }
         }
-        */
+      
       stage('SAST'){
             steps {
                  sh 'env | grep -E "JENKINS_HOME|BUILD_ID|GIT_BRANCH|GIT_COMMIT" > /tmp/env'
