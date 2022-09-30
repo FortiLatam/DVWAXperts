@@ -45,12 +45,6 @@ pipeline {
          }
         }
       }
-      /*stage('CNP Scan'){
-            steps {
-                 fortiCWPScanner imageName: "${IMAGE_REPO_NAME}:${IMAGE_TAG}-${env.BUILD_NUMBER}", block: true
-            }
-        }
-      */
       /*stage('SAST'){
             steps {
                  sh 'env | grep -E "JENKINS_HOME|BUILD_ID|GIT_BRANCH|GIT_COMMIT" > /tmp/env'
