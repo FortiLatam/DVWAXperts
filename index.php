@@ -18,7 +18,7 @@ $page[ 'body' ] .= "
 	<br />
 
 	<h2>General Instructions</h2>
-	<p>Please note, there are <em>many</em> vulnerabilities in this software. This is intentional. However, as this is for Fortinet Xpert Summit, we ask you to follow all the instructions in the student guide.</p>
+	<p>Please note, there are <em>many</em> vulnerabilities in this software. This is intentional. However, as this is for Fortinet Xperts Summit, we ask you to follow all the instructions in the student guide.</p>
 	<hr />
 	<br />
 
