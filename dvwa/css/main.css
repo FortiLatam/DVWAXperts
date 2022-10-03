@@ -16,7 +16,7 @@ div.clear {
 }
 
 a {
-	color: #99cc33;
+	color: #642bd4;
 	text-decoration: underline;
 	font-weight: bold;
 }
@@ -119,7 +119,7 @@ div#header {
 	padding: 10px;
 	overflow: hidden;
 	background: #2f2f2f;
-	border-bottom: 5px solid #A1CC33;
+	border-bottom: 5px solid ##642bd4;
 	text-align: center;
 }
 
@@ -168,7 +168,7 @@ div#main_menu li a {
 
 div#main_menu li.selected {
 	border-color: #758DAE #758DAE #758DAE #758DAE;
-	background-color: #99cc33;
+	background-color: #642bd4;
 }
 
 div#main_menu li.selected a {
@@ -189,10 +189,10 @@ div#main_menu_padded {
 
 div#footer {
 	color: #999999;
-	background: #2f2f2f;
+	background: ##fffefe;
 	padding: 10px;
 	text-align: center;
-	border-top: 5px solid #A1CC33;
+	border-top: 5px solid #642bd4;
 }
 
 input.popup_button {
