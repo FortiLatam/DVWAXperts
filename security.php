@@ -19,9 +19,10 @@ if( isset( $_POST['seclev_submit'] ) ) {
 		case 'low':
 			$securityLevel = 'low';
 			break;
-		case 'medium':
-			$securityLevel = 'medium';
-			break;
+		//Changed
+		//case 'medium':
+		//	$securityLevel = 'medium';
+		//	break;
 		case 'high':
 			$securityLevel = 'high';
 			break;
@@ -52,7 +53,9 @@ if( isset( $_GET['phpids'] ) ) {
 
 $securityOptionsHtml = '';
 $securityLevelHtml   = '';
-foreach( array( 'low', 'medium', 'high', 'impossible' ) as $securityLevel ) {
+//Changed
+//foreach( array( 'low', 'medium', 'high', 'impossible' ) as $securityLevel ) {
+foreach( array( 'low', 'high', 'impossible' ) as $securityLevel ) {
 	$selected = '';
 	if( $securityLevel == dvwaSecurityLevelGet() ) {
 		$selected = ' selected="selected"';
@@ -122,6 +125,10 @@ $page[ 'body' ] .= "
 	[<a href=\"ids_log.php\">View IDS log</a>]
 </div>";
 
-dvwaHtmlEcho( $page );
+$page_custom[ 'body' ] .= "";
+
+//Changed
+//dvwaHtmlEcho( $page );
+dvwaHtmlEcho( $page_custom );
 
 ?>
