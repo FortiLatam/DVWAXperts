@@ -118,8 +118,8 @@ div#container {
 div#header {
 	padding: 10px;
 	overflow: hidden;
-	background: #2f2f2f;
-	border-bottom: 5px solid ##642bd4;
+	background: #fff;
+	border-bottom: 5px solid #642bd4;
 	text-align: center;
 }
 
