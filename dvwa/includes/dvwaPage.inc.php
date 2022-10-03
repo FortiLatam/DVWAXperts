@@ -129,7 +129,8 @@ function dvwaCurrentUser() {
 
 function &dvwaPageNewGrab() {
 	$returnArray = array(
-		'title'           => 'Damn Vulnerable Web Application (DVWA) v' . dvwaVersionGet() . '',
+		//Changed
+		'title'           => 'SmartGas DVWA v' . dvwaVersionGet() . '',
 		'title_separator' => ' :: ',
 		'body'            => '',
 		'page_id'         => '',
