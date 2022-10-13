@@ -1,0 +1,50 @@
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: dvwaalb
+spec:
+  template:
+    metadata:
+      labels:
+        app: dvwaalb
+    spec:
+      containers:
+      - name: dvwaalb
+        image: public.ecr.aws/f9n2h3p5/dvwaalb:<TAG>
+        imagePullPolicy: "Always"
+  selector:
+    matchLabels:
+      app: dvwaalb
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: dvwa-service
+spec:
+  ports:
+    - port: 8082
+      targetPort: 80
+      protocol: TCP
+  type: NodePort
+  selector:
+    app: dvwaalb
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: dvwaalb-ingress
+  annotations:
+    alb.ingress.kubernetes.io/scheme: internet-facing
+    alb.ingress.kubernetes.io/target-type: ip
+spec:
+  ingressClassName: alb
+  rules:
+    - http:
+        paths:
+        - path: /
+          pathType: Prefix
+          backend:
+            service:
+              name: dvwa-service
+              port:
+                number: 8082
