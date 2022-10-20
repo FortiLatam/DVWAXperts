@@ -12,6 +12,8 @@ spec:
       - name: dvwaalb
         image: public.ecr.aws/f9n2h3p5/dvwaalb:<TAG>
         imagePullPolicy: "Always"
+        securityContext:
+ allowPrivilegeEscalation: false
   selector:
     matchLabels:
       app: dvwaalb
