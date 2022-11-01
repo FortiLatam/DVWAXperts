@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-        IMAGE_REPO_NAME="dvwapub"
+        IMAGE_REPO_NAME="dvwaalb"
         //REPLACE XXX WITH YOUR STUDENT NUMBER
         IMAGE_TAG= "std404X"
         REPOSITORY_URI = "public.ecr.aws/f9n2h3p5/dvwaalb"
