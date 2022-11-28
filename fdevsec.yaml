@@ -18,4 +18,4 @@ scanners:
 #  full_scan: true #true|false
 
 fail_pipeline:
-  risk_rating: 6
+  risk_rating: 8
