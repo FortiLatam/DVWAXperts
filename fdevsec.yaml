@@ -6,14 +6,14 @@ id:
   
 scanners:
   - sast
-  #- dast
+  - dast
   - secret
   - sca
   - iac
   - container   
     
-#dast:
-#  url: http://XXXXX.us-east-1.elb.amazonaws.com:8081/
+dast:
+  url: http://127.0.0.1:8081/
 #  fortipentest_scanner: false #true|false
 #  full_scan: true #true|false
 
