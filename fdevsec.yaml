@@ -13,7 +13,7 @@ scanners:
   - container   
     
 dast:
-  url: http://10.2.4.74:8081/
+  url: http://10.2.4.74:8080/
 #  fortipentest_scanner: false #true|false
 #  full_scan: true #true|false
 
