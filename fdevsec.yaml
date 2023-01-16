@@ -1,20 +1,19 @@
 version: v1
 
 id:
-  org: 60128e83-07b2-447a-be47-7e3405a278ad
-  app: 204416ae-adc0-4629-a9a7-2c7c70cd7150
+  org: XXX-XXX-XXX-XX
+  app: XXX-XXX-XXX-XX
   
 scanners:
   - sast
-  - dast
+  #- dast
   - secret
   - sca
   - iac
   - container   
     
 dast:
-  #url: http://a65c8f5601a0346fc8326eb7f016a5c7-2078004536.us-east-1.elb.amazonaws.com:8081/
-  url: http://10.2.5.56:8081/
+#  url: http://xxx.xxx.xx/
 #  fortipentest_scanner: false #true|false
   full_scan: true #true|false
 
