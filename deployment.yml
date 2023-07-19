@@ -28,3 +28,6 @@ spec:
   - name: http
     port: 8081
     targetPort: 80
+  loadBalancerSourceRanges:
+  - 130.211.204.1/32
+  - 130.211.204.2/32
