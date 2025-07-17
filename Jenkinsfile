@@ -2,7 +2,7 @@ pipeline {
     agent any
     environment {
         IMAGE_REPO_NAME="dvwapub"
-        //REPLACE XXX WITH YOUR STUDENT NUMBER
+        //REPLACE XXX WITH YOUR STUDENT NUMBER for
         IMAGE_TAG= "stdXXX"
         REPOSITORY_URI = "public.ecr.aws/f9n2h3p5/dvwapub"
         AWS_DEFAULT_REGION = "us-east-1"
